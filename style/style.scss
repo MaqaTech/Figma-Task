@@ -1,0 +1,274 @@
+@import "./mixins";
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .mobile{
+        display: none;
+        @include mobile{
+            display: block;
+            img{
+                margin: 0px 10px;
+            }
+        }
+    }
+
+    .text_navbar{
+        list-style-type: none;
+        color: #737373;
+        display: flex; 
+        width: 40%;
+        font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+        @include mobile{
+            display: none;
+        }
+        li{
+            margin: 0px 15px;
+        }
+        
+
+    }
+    .button{
+        @include mobile{
+            display: none;
+        }
+        .btn_login{
+            border-style: none;
+            background-color: #fff;
+            color: #23A6F0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .btn_become{
+            border-style: none;
+            background-color: #23A6F0;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+// HEADERIN SONU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#nav{
+    .icon_text{
+        display: flex; gap: 20px;
+        justify-content: center;
+        font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+
+        .span{
+            color: #737373;
+
+        }
+    }
+    text-align: center;
+    h4{
+        color: #737373;
+    }
+    h1{
+        color: #252B42;
+    }
+}
+
+
+// NAVBAR END !!!!!!!!!!!!!!!!!!!!
+
+#section{
+    padding: 40px 0px;
+    margin-top: 5%;
+    background-color: #FAFAFA;
+    
+    
+
+    .box1{
+        text-align: center;
+        
+        h1{
+            color: #252B42;
+        }
+        .parag{
+            color: #737373;
+        }
+        .save{
+            display: flex; gap: 20px;
+            justify-content: center;
+            button{
+                padding: 2px 28px ;
+                border: none;
+                background-color: #B2E3FF;
+                color: #23A6F0;
+                cursor: pointer;
+                border-radius: 37px;
+
+
+
+            }
+        }
+    }
+    .sec_img{
+        text-align: center;
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+    .icons{
+        text-align: center;
+        margin-top: 5%;
+        flex-wrap: wrap;
+        img{
+            margin: 0px 30px;
+        }
+    }
+}
+// SECTION END !!!!!!!!!!!!!!!!!!!!!!
+
+#article{
+
+    .article_h{
+        margin-top: 5%;
+        text-align: center;
+        h1{
+            color: #252B42;
+        }
+        p{
+            color: #737373;
+        }
+    }
+    .article_text{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        b{
+            color: #252B42;
+        }
+        p{
+            color: #737373;
+        }
+    }
+    .article_end{
+        color: #737373;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+// ARTICLE 1 ENDDDDDDDD 
+
+#article2{
+     text-align: center;
+     margin-top: 15%;
+    .article2_text{
+        img{
+            margin: 0px 10px;
+        }
+        h1{
+            color: #252B42;
+        }
+        p{
+            color: #737373;
+        }
+        button{
+            border-radius: 5px;
+            border: none;
+            background-color: #23A6F0;
+            color: #fff;
+            padding: 10px 30px;
+
+        }
+    }
+
+
+
+
+
+}
+
+
+// ARITCLE 2 ENDDDD !!!!!!!!!!!!!!!!
+
+
+#footer{
+.footer_tittle{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+        margin: 0px 10px;
+    }
+}
+.footer_list{
+    display: flex;
+    justify-content: space-around;
+     @include mobile{
+        flex-direction: column;
+     }    
+    ul{
+        list-style-type: none;
+        line-height: 40px;
+      
+       
+        li{
+            color: #737373;
+            :nth-child(1){
+                color: #252B42;
+
+            }
+
+          
+        }
+    }
+    
+        .forum{
+          
+input{
+    padding: 8px 13px;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+
+background: #F9F9F9;
+}
+           
+        button{
+            border-radius: 5px;
+            color: #FAFAFA;
+            background-color: #23A6F0;
+            padding: 11px 18px;
+            border: none;
+        }
+    }
+    p{
+        color: #737373;
+    }
+    
+}
+
+#end{
+    margin-top: 4%;
+    background-color: #FAFAFA;
+    padding: 10px 30px;
+    h4{
+        color: #737373;
+        margin-left: 10%;
+    }
+}
+
+
+
+}
