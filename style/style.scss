@@ -8,6 +8,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0%;
+    background-color: #fff;
+
     .mobile{
         display: none;
         @include mobile{
@@ -28,6 +34,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.2px;
+
         @include mobile{
             display: none;
         }
@@ -62,7 +69,9 @@ letter-spacing: 0.2px;
 
 // HEADERIN SONU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #nav{
+    
     .icon_text{
+        
         display: flex; gap: 20px;
         justify-content: center;
         font-size: 16px;
@@ -79,6 +88,7 @@ letter-spacing: 0.1px;
     text-align: center;
     h4{
         color: #737373;
+        margin-top: 8%;
     }
     h1{
         color: #252B42;
@@ -124,6 +134,12 @@ letter-spacing: 0.1px;
         text-align: center;
         margin-top: 5%;
         flex-wrap: wrap;
+        :nth-child(2){height: 41.5rem;}
+        img{
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
     }
     .icons{
         text-align: center;

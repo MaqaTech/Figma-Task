@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0%;
+  background-color: #fff;
 }
 #header .mobile {
   display: none;
@@ -77,6 +82,7 @@
 }
 #nav h4 {
   color: #737373;
+  margin-top: 8%;
 }
 #nav h1 {
   color: #252B42;
@@ -113,6 +119,12 @@
   text-align: center;
   margin-top: 5%;
   flex-wrap: wrap;
+}
+#section .sec_img :nth-child(2) {
+  height: 41.5rem;
+}
+#section .sec_img img:hover {
+  transform: scale(1.05);
 }
 #section .icons {
   text-align: center;
